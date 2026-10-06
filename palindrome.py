@@ -6,6 +6,26 @@ if n == n[::-1]:
 else:
     print(n, "is not a palindrome")
 
+# check palindrome using loop
+n = input("enter a string:")
+
+left = 0
+right = len(n) - 1
+palindrome = True
+
+while left < right:
+    if n[left] != n[right]:
+        palindrome = False
+        break
+    left += 1
+    right -= 1
+
+if palindrome:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+
 #check palindrome using loop
 n = int(input("enter a number:"))
 
