@@ -65,3 +65,21 @@ for i in range(n-1, 0, -1):
 
     print()
 
+# print right angled traingle using *
+
+n = int(input("enter a rows:"))
+
+for i in range(1, n+1):
+    for j in range(i):
+        print("*", end = " ")
+    print()
+    
+
+# print inverted right angled traingle using *
+
+n = int(input("enter a rows:"))
+
+for i in range(n, 0, -1):
+    for j in range(i):
+        print("*", end = " ")
+    print()
